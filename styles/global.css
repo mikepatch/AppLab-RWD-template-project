@@ -1,31 +1,77 @@
 /* Global styles */
 
+:root {
+
+    /* colors */
+    --fontLight: #fefefe;
+
+    --menuBtnColor: #fefefe;
+    --headerBtnBg: #37ebed;
+    --downloadBtnBg: #42b3fa;
+    --navbarBg: #2c2c2c;
+
+    --firstFeatureColor: linear-gradient(90deg, rgba(16,136,240,1) 0%, rgba(87,175,254,1) 100%);
+    --secondFeatureColor: linear-gradient(90deg, rgba(253,173,92,1) 0%, rgba(253,143,94,1) 100%);
+    --thirdFeatureColor: #37ef8d;
+
+    /* dimensions */
+    --navbarHeight: 40px;
+}
+
+html {
+    font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--fontLight);
+    text-decoration: none;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    padding: 1em 1.7em;
+}
+
 .row, .container, .cell {
-    border: 5px solid;
-    margin: 5px;
+    /* border: 5px solid; */
+    /* margin: 5px; */
 }
 
 .row {
     border-color: green;
+    margin: 0;
+}
+
+/* Padding for fixed navbar */
+.row:first-of-type {
+    padding-top: var(--navbarHeight);
 }
 
 .container {
     border-color: blue;
+    max-width: 1280px;
+    margin: 1em auto;
+    padding: 0 1.1em;
+}
+
+.container:first-of-type {
+    margin-top: 0;
 }
 
 .cell {
-    border-color: orange;
-    background-color: orange;
-    min-height: 50px;
-    min-width: 50px;
+    /* border-color: orange;
+    background-color: orange; */
+    /* margin: 1em 0; */
 }
 
-.list__img {
-    background-color: blue;
-    border-radius: 10px;
-    padding: 1em;
-}
-
-.section__stars {
-    color: gold;
+.cell:first-of-type {
+    margin-top: 0;
 }

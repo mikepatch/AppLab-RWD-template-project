@@ -1,0 +1,31 @@
+/* Tablet styles */
+:root {
+    --navbarHeight: 80px;
+}
+
+/* Header */
+
+.header__container {
+    gap: 0;
+    padding: 4em 4em;
+}
+
+/* Navbar */
+.navbar__brand-logo {
+    align-items: center;
+    display: flex;
+}
+
+.brand.logo__img {
+    height: 100%;
+}
+
+.title-box {
+    flex-basis: 50%;
+    padding: 0;
+}
+
+.img-box {
+    flex-basis: 50%;
+
+}

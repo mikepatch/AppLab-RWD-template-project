@@ -28,13 +28,17 @@
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar row">
-        <div class="navbar__container container">
-            <figure class="navbar__brand-logo cell"><img src="./images/logo.png" alt="" class="brand-logo__img">
+
+    <!-- Header -->
+    <header class="header row">
+
+        <!-- Navbar -->
+        <nav class="header__navbar navbar row">
+            <figure class="navbar__brand-logo brand-logo cell"><img src="./images/logo.png" alt=""
+                    class="brand-logo__img">
             </figure>
 
-            <label for="navbar__hamburger-toggle" class="navbar__hamburger-btn">
+            <label for="navbar__hamburger-toggle" class="navbar__hamburger-btn cell">
                 <span class="navbar__hamburger-lines"></span>
             </label>
             <input type="checkbox" id="navbar__hamburger-toggle">
@@ -42,13 +46,13 @@
                 <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
                 <li class="navbar__item"><a href="#" class="navbar__link">Features</a></li>
                 <li class="navbar__item"><a href="#" class="navbar__link">Pricing</a></li>
-                <li class="navbar__item navbar__dropdown"><a href="#" class="navbar__link">Blog <i
+                <li class="navbar__item navbar__dropdown"><a href="#" class="navbar__link ">Blog <i
                             class="fa-solid fa-chevron-down navbar__arrow"></i></a>
 
                     <ul class="dropdown__list">
-                        <li class="dropdown__item"><a href="" class="dropdown__link">Lifestyle</a></li>
-                        <li class="dropdown__item"><a href="" class="dropdown__link">Technologies</a></li>
-                        <li class="dropdown__item"><a href="" class="dropdown__link">Programming</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Lifestyle</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Technologies</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Programming</a></li>
                     </ul>
 
                 </li>
@@ -56,29 +60,26 @@
                             class="fa-solid fa-chevron-down navbar__arrow"></i></a>
 
                     <ul class="dropdown__list">
-                        <li class="dropdown__item"><a href="" class="dropdown__link">Site 1</a></li>
-                        <li class="dropdown__item"><a href="" class="dropdown__link">Site 2</a></li>
-                        <li class="dropdown__item"><a href="" class="dropdown__link">Site 3</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Site 1</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Site 2</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Site 3</a></li>
                     </ul>
 
                 </li>
                 <li class="navbar__item"><a href="#" class="navbar__link">Contact</a></li>
-                <!-- CTA button (distance from the other navbar__item) -->
-                <li class="navbar__item"><a href="#" class="navbar__link navbar__link--cta-btn">Download</a></li>
+                <!-- CTA button -->
+                <li class="navbar__item"><a href="#" class="navbar__link navbar__link--cta-btn btn">Download</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Header -->
-    <header class="header row">
         <div class="header__container container">
-            <article class="header__title-box cell">
+            <article class="header__title-box title-box cell">
                 <h1 class="title-box__title">Promote your app with applab</h1>
                 <p class="title-box__content">Get more users to promote your app with this template</p>
                 <button class="title-box__btn btn">Get start now</button>
             </article>
 
-            <figure class="header__img-box cell">
+            <figure class="header__img-box img-box cell">
                 <img src="./images/phone.png" alt="Phone device displays app GUI." class="img-box__img">
             </figure>
         </div>
