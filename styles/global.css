@@ -1,0 +1,31 @@
+/* Global styles */
+
+.row, .container, .cell {
+    border: 5px solid;
+    margin: 5px;
+}
+
+.row {
+    border-color: green;
+}
+
+.container {
+    border-color: blue;
+}
+
+.cell {
+    border-color: orange;
+    background-color: orange;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.list__img {
+    background-color: blue;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.section__stars {
+    color: gold;
+}

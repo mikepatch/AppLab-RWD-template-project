@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Applab template project</title>
 
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +27,262 @@
 </head>
 
 <body>
+
+    <!-- Navbar -->
+    <nav class="navbar row">
+        <div class="navbar__container container">
+            <figure class="navbar__brand-logo cell"><img src="./images/logo.png" alt="" class="brand-logo__img">
+            </figure>
+
+            <label for="navbar__hamburger-toggle" class="navbar__hamburger-btn">
+                <span class="navbar__hamburger-lines"></span>
+            </label>
+            <input type="checkbox" id="navbar__hamburger-toggle">
+            <ul class="navbar__list cell">
+                <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Features</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Pricing</a></li>
+                <li class="navbar__item navbar__dropdown"><a href="#" class="navbar__link">Blog <i
+                            class="fa-solid fa-chevron-down navbar__arrow"></i></a>
+
+                    <ul class="dropdown__list">
+                        <li class="dropdown__item"><a href="" class="dropdown__link">Lifestyle</a></li>
+                        <li class="dropdown__item"><a href="" class="dropdown__link">Technologies</a></li>
+                        <li class="dropdown__item"><a href="" class="dropdown__link">Programming</a></li>
+                    </ul>
+
+                </li>
+                <li class="navbar__item navbar__dropdown"><a href="#" class="navbar__link">Pages <i
+                            class="fa-solid fa-chevron-down navbar__arrow"></i></a>
+
+                    <ul class="dropdown__list">
+                        <li class="dropdown__item"><a href="" class="dropdown__link">Site 1</a></li>
+                        <li class="dropdown__item"><a href="" class="dropdown__link">Site 2</a></li>
+                        <li class="dropdown__item"><a href="" class="dropdown__link">Site 3</a></li>
+                    </ul>
+
+                </li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Contact</a></li>
+                <!-- CTA button (distance from the other navbar__item) -->
+                <li class="navbar__item"><a href="#" class="navbar__link navbar__link--cta-btn">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header row">
+        <div class="header__container container">
+            <article class="header__title-box cell">
+                <h1 class="title-box__title">Promote your app with applab</h1>
+                <p class="title-box__content">Get more users to promote your app with this template</p>
+                <button class="title-box__btn btn">Get start now</button>
+            </article>
+
+            <figure class="header__img-box cell">
+                <img src="./images/phone.png" alt="Phone device displays app GUI." class="img-box__img">
+            </figure>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <section id="features" class="section section--features row">
+            <div class="section__container container">
+                <h2 class="section__title cell">Save your time to using applab</h2>
+
+                <ul class="section__list cell">
+                    <li class="list__item">
+                        <figure class="list__content">
+                            <img src="./images/icons/2.svg" alt="" class="list__img" aria-hidden="true">
+                            <figcaption class="list__description">Manage team in One Place</figcaption>
+                        </figure>
+                    </li>
+                    <li class="list__item">
+                        <figure class="list__content">
+                            <img src="./images/icons/1.svg" alt="" class="list__img" aria-hidden="true">
+                            <figcaption class="list__description">All-powerful Pointing has no control</figcaption>
+                        </figure>
+                    </li>
+                    <li class="list__item">
+                        <figure class="list__content">
+                            <img src="./images/icons/3.svg" alt="" class="list__img" aria-hidden="true">
+                            <figcaption class="list__description">Establish a solid online presence</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section section--seo row">
+            <div class="section__container container">
+                <article class="section__content-box cell">
+                    <h2 class="section__title">Features that give you real feel</h2>
+                    <p class="section__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                        quibusdam quis quisquam, beatae perferendis asperiores sint corporis saepe provident ducimus quo
+                        maiores error dolorum laboriosam in fugit officiis amet.</p>
+                    <button class="section__btn btn"></button>
+                </article>
+
+                <figure class="section__img-box cell">
+                    <img src="./images/draw.png" alt="An illustration of a finger draw on the cell phone"
+                        class="section__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="section section--testimonials row">
+            <div class="section__container container">
+                <article class="section__content-box cell">
+                    <h2 class="section__title">Review from our regular users</h2>
+                    <p class="section__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+                        porro sed ad blanditiis, consequatur earum voluptatibus exercitationem repellendus animi.</p>
+                    <address class="section__author"><span
+                            class="section__stars">&starf;&starf;&starf;&starf;&starf;</span> - Robert Smile</address>
+                </article>
+            </div>
+        </section>
+
+        <section id="pricing" class="section section--pricing row">
+            <div class="section__container container">
+                <header class="section__header cell">
+                    <h2 class="section__title">Unlock full Power</h2>
+                    <p class="section__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nemo
+                        consequuntur.</p>
+                </header>
+
+                <ul class="section__list cell">
+                    <li class="list__item">
+                        <header class="list__header">
+                            <h2 class="list__title"></h2>
+                            <p class="list__price"></p>
+                        </header>
+
+                        <ul class="list list--second">
+                            <li class="list__item list__item--second">One User</li>
+                            <li class="list__item list__item--second">1000 ui elements</li>
+                            <li class="list__item list__item--second">Webmail Support</li>
+                            <li class="list__item list__item--second">100GB Cloud Storage</li>
+                        </ul>
+
+                        <button class="list__cta-btn btn">Get now</button>
+                    </li>
+
+                    <li class="list__item">
+                        <header class="list__header">
+                            <h2 class="list__title"></h2>
+                            <p class="list__price"></p>
+                        </header>
+
+                        <ul class="list list--second">
+                            <li class="list__item list__item--second">One User</li>
+                            <li class="list__item list__item--second">1000 ui elements</li>
+                            <li class="list__item list__item--second">Webmail Support</li>
+                            <li class="list__item list__item--second">100GB Cloud Storage</li>
+                            <li class="list__item list__item--second">Unlimited Users Limit</li>
+                        </ul>
+
+                        <button class="list__cta-btn btn">Get now</button>
+                    </li>
+
+                    <li class="list__item">
+                        <header class="list__header">
+                            <h2 class="list__title"></h2>
+                            <p class="list__price"></p>
+                        </header>
+
+                        <ul class="list list--second">
+                            <li class="list__item list__item--second">One User</li>
+                            <li class="list__item list__item--second">1000 ui elements</li>
+                            <li class="list__item list__item--second">Webmail Support</li>
+                            <li class="list__item list__item--second">100GB Cloud Storage</li>
+                        </ul>
+
+                        <button class="list__cta-btn btn">Get now</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section section--download row">
+            <div class="section__container container">
+                <h2 class="section__title cell">Get start from now and increase productivity</h2>
+
+                <figure class="section__download-icons-box cell">
+                    <img src="./images/app.svg" alt="Apple Store download button" class="section__download-icon">
+                    <img src="./images/play.svg" alt="Google Play download button" class="section__download-icon">
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer row">
+        <div class="footer__container footer__footer-links container">
+            <article class="footer-links__content cell">
+                <h2 class="footer__title">AppLab</h2>
+
+                <p class="footer__content">Firmament morning sixth subdude darness creeping gathered divide.</p>
+
+                <ul class="footer__icons-list">
+                    <li class="icons-list__item"><a href="https://facebook.com" class="icons-list__link"
+                            target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="icons-list__item"><a href="https://twitter.com" class="icons-list__link"
+                            target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="icons-list__item"><a href="https://instagram.com" class="icons-list__link"
+                            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="footer-links__content cell">
+                <h2 class="footer__title">Services</h2>
+
+                <ul class="footer__link-list">
+                    <li class="link-list__item"><a href="#" class="link-list__link">Team management</a>
+                    </li>
+                    <li class="link-list__item"><a href="#" class="link-list__link">Collaboration</a>
+                    </li>
+                    <li class="link-list__item"><a href="#" class="link-list__link">Todo</a>
+                    </li>
+                    <li class="link-list__item"><a href="#" class="link-list__link">Events</a>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="footer-links__content cell">
+                <h2 class="footer__title">Useful Links</h2>
+
+                <ul class="footer__link-list">
+                    <li class="link-list__item"><a href="#pricing" class="link-list__link">Pricing</a>
+                    </li>
+                    <li class="link-list__item"><a href="#features" class="link-list__link">Features</a>
+                    </li>
+                    <li class="link-list__item"><a href="#" class="link-list__link">Blog</a>
+                    </li>
+                    <li class="link-list__item"><a href="#" class="link-list__link">Contact</a>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="footer-links__content cell">
+                <h2 class="footer__title">Downloads</h2>
+
+                <ul class="footer__link-list">
+                    <li class="link-list__item"><a href="#" class="link-list__link">Download from Apple Store</a>
+                    </li>
+                    <li class="link-list__item"><a href="#" class="link-list__link">Download from Play Store</a>
+                    </li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="footer__container footer__footer-rights container">
+            <p class="footer-rights__content cell">Copyright &copy;2020 All rights reserved | This template is made with
+                &hearts; by <a href="#" class="footer-rights__link">Colorlib</a></p>
+        </div>
+    </footer>
 
 </body>
 
