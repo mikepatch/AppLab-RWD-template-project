@@ -44,8 +44,8 @@
             <input type="checkbox" id="navbar__hamburger-toggle">
             <ul class="navbar__list cell">
                 <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">Features</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">Pricing</a></li>
+                <li class="navbar__item"><a href="#features" class="navbar__link">Features</a></li>
+                <li class="navbar__item"><a href="#pricing" class="navbar__link">Pricing</a></li>
                 <li class="navbar__item navbar__dropdown"><a href="#" class="navbar__link ">Blog <i
                             class="fa-solid fa-chevron-down navbar__arrow"></i></a>
 
@@ -68,7 +68,8 @@
                 </li>
                 <li class="navbar__item"><a href="#" class="navbar__link">Contact</a></li>
                 <!-- CTA button -->
-                <li class="navbar__item"><a href="#" class="navbar__link navbar__link--cta-btn btn">Download</a></li>
+                <li class="navbar__item"><a href="#download" class="navbar__link navbar__link--cta-btn btn">Download</a>
+                </li>
             </ul>
         </nav>
 
@@ -76,7 +77,7 @@
             <article class="header__title-box title-box cell">
                 <h1 class="title-box__title">Promote your app with applab</h1>
                 <p class="title-box__content">Get more users to promote your app with this template</p>
-                <button class="title-box__btn btn">Get start now</button>
+                <a href="#download"><button class="title-box__btn btn">Get start now</button></a>
             </article>
 
             <figure class="header__img-box img-box cell">
@@ -87,41 +88,44 @@
 
     <!-- Main content -->
     <main>
+        <!-- Features section -->
         <section id="features" class="section section--features row">
             <div class="section__container container">
                 <h2 class="section__title cell">Save your time to using applab</h2>
 
-                <ul class="section__list cell">
-                    <li class="list__item">
-                        <figure class="list__content">
-                            <img src="./images/icons/2.svg" alt="" class="list__img" aria-hidden="true">
-                            <figcaption class="list__description">Manage team in One Place</figcaption>
+                <ul class="section__list feature-list cell">
+                    <li class="feature-list__item">
+                        <figure class="feature-list__content">
+                            <img src="./images/icons/2.svg" alt="" class="feature-list__img" aria-hidden="true">
+                            <figcaption class="feature-list__description">Manage team in One Place</figcaption>
                         </figure>
                     </li>
-                    <li class="list__item">
-                        <figure class="list__content">
-                            <img src="./images/icons/1.svg" alt="" class="list__img" aria-hidden="true">
-                            <figcaption class="list__description">All-powerful Pointing has no control</figcaption>
+                    <li class="feature-list__item">
+                        <figure class="feature-list__content">
+                            <img src="./images/icons/1.svg" alt="" class="feature-list__img" aria-hidden="true">
+                            <figcaption class="feature-list__description">All-powerful Pointing has no control
+                            </figcaption>
                         </figure>
                     </li>
-                    <li class="list__item">
-                        <figure class="list__content">
-                            <img src="./images/icons/3.svg" alt="" class="list__img" aria-hidden="true">
-                            <figcaption class="list__description">Establish a solid online presence</figcaption>
+                    <li class="feature-list__item">
+                        <figure class="feature-list__content">
+                            <img src="./images/icons/3.svg" alt="" class="feature-list__img" aria-hidden="true">
+                            <figcaption class="feature-list__description">Establish a solid online presence</figcaption>
                         </figure>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="section section--seo row">
+        <!-- SEO section -->
+        <section id="seo" class="section section--seo row">
             <div class="section__container container">
                 <article class="section__content-box cell">
                     <h2 class="section__title">Features that give you real feel</h2>
                     <p class="section__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
                         quibusdam quis quisquam, beatae perferendis asperiores sint corporis saepe provident ducimus quo
                         maiores error dolorum laboriosam in fugit officiis amet.</p>
-                    <button class="section__btn btn"></button>
+                    <a href="#download"><button class="section__btn btn">Download Now</button></a>
                 </article>
 
                 <figure class="section__img-box cell">
@@ -131,7 +135,8 @@
             </div>
         </section>
 
-        <section class="section section--testimonials row">
+        <!-- Testimonials section -->
+        <section id="testimonials" class="section section--testimonials row">
             <div class="section__container container">
                 <article class="section__content-box cell">
                     <h2 class="section__title">Review from our regular users</h2>
@@ -143,6 +148,7 @@
             </div>
         </section>
 
+        <!-- Pricing section -->
         <section id="pricing" class="section section--pricing row">
             <div class="section__container container">
                 <header class="section__header cell">
@@ -152,10 +158,10 @@
                 </header>
 
                 <ul class="section__list cell">
-                    <li class="list__item">
-                        <header class="list__header">
-                            <h2 class="list__title"></h2>
-                            <p class="list__price"></p>
+                    <li class="section__item">
+                        <header class="section__header">
+                            <h2 class="section__title"></h2>
+                            <p class="section__price"></p>
                         </header>
 
                         <ul class="list list--second">
@@ -168,7 +174,7 @@
                         <button class="list__cta-btn btn">Get now</button>
                     </li>
 
-                    <li class="list__item">
+                    <li class="section__item">
                         <header class="list__header">
                             <h2 class="list__title"></h2>
                             <p class="list__price"></p>
@@ -204,7 +210,8 @@
             </div>
         </section>
 
-        <section class="section section--download row">
+        <!-- Download App Section -->
+        <section id="download" class="section section--download row">
             <div class="section__container container">
                 <h2 class="section__title cell">Get start from now and increase productivity</h2>
 

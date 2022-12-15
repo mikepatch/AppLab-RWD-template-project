@@ -4,11 +4,14 @@
 
     /* colors */
     --fontLight: #fefefe;
+    --fontDark: #333;
+    --fontGrey: #666;
 
     --btnShadow: 10px 10px 20px 0 rgba(0, 0, 0, .08);
     --menuBtnColor: #fefefe;
     --headerBtnBg: #37ebed;
     --downloadBtnBg: #42b3fa;
+    --downloadSectionBtnBg: #0181f5;
     --navbarBg: #2c2c2c;
 
 
@@ -54,7 +57,7 @@ a {
 }
 
 /* Padding for fixed navbar */
-.row:first-of-type {
+header.row {
     padding-top: var(--navbarHeight);
 }
 
@@ -73,8 +76,4 @@ a {
     /* border-color: orange;
     background-color: orange; */
     /* margin: 1em 0; */
-}
-
-.cell:first-of-type {
-    margin-top: 0;
 }

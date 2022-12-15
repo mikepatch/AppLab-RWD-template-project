@@ -3,11 +3,16 @@
     --dropdownBg: rgba(44, 44, 44, 0.9);
 }
 
+.container {
+    max-width: 1280px;
+    padding: 0 1.1em;
+}
+
 /* Header */
 
 .header.row {
     padding: .8em 0;
-    min-height: 80dvh;
+    min-height: 70dvh;
 }
 /* Navbar */
 .navbar.row {
@@ -89,7 +94,9 @@
 /* Header content */
 .header__container {
     padding: 5em 0;
+    height: 100%;
     margin: 0;
+
 }
 
 .title-box {
@@ -118,4 +125,35 @@
 
 .img-box {
     flex-basis: 40%;
+    height: 100%;
+}
+
+.img-box__img {
+    max-height: 120%;
+}
+
+/* MAIN */
+
+.section {
+    margin-top: 5.5em;
+}
+
+.section__title {
+    width: 40%;
+}
+
+/* Features section */
+.feature-list__item {
+    flex-basis: 33.33%;
+    /* padding: 0 2em; */
+}
+
+.feature-list__img {
+    width: 3.5em;
+}
+
+.feature-list__description {
+    font-size: .7rem;
+
+    padding: 0 3.3em;
 }
