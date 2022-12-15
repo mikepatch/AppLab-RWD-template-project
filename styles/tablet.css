@@ -1,16 +1,23 @@
 /* Tablet styles */
 :root {
-    --navbarHeight: 80px;
+    --navbarHeight: 60px;
+}
+
+.btn {
+    padding: 1em 2em;
 }
 
 /* Header */
-
-.header__container {
-    gap: 0;
-    padding: 4em 4em;
+.header.row {
+    background: left 30% / 100% 100% no-repeat url(../images/banner/banner.png);
+    max-height: 50dvh;
 }
 
 /* Navbar */
+.navbar.row {
+    padding: 0 1.5em;
+}
+
 .navbar__brand-logo {
     align-items: center;
     display: flex;
@@ -20,12 +27,36 @@
     height: 100%;
 }
 
+.navbar__hamburger-btn {
+    width: 2em;
+}
+
+/* Header content */
+
 .title-box {
     flex-basis: 50%;
-    padding: 0;
+    padding: 1em 0;
+}
+
+.title-box__title {
+    font-size: 1.2rem;
+}
+
+.title-box__content {
+    margin: .7em 0;
+    font-size: .77rem;
+}
+
+.title-box__btn {
+    font-size: .6rem;
+}
+
+.header__container {
+    gap: 0;
+    padding: 4em 4em 0 4em;
 }
 
 .img-box {
     flex-basis: 50%;
-
+    max-height: 100%;
 }
