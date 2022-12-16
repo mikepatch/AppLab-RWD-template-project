@@ -13,7 +13,7 @@
     --downloadBtnBg: #42b3fa;
     --downloadSectionBtnBg: #0181f5;
     --navbarBg: #2c2c2c;
-
+    --sectionBg: rgba(93, 177, 255, 0.8);
 
     --firstFeatureColor: linear-gradient(90deg, rgba(16,136,240,1) 0%, rgba(87,175,254,1) 100%);
     --secondFeatureColor: linear-gradient(90deg, rgba(253,173,92,1) 0%, rgba(253,143,94,1) 100%);
@@ -73,7 +73,7 @@ header.row {
 }
 
 .cell {
-    /* border-color: orange;
-    background-color: orange; */
+    border-color: orange;
+   /*  background-color: orange;*/
     /* margin: 1em 0; */
 }
