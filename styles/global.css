@@ -3,7 +3,7 @@
 :root {
 
     /* colors */
-    --fontLight: #fefefe;
+    --fontLight: #e2e2e2;
     --fontDark: #333;
     --fontGrey: #666;
 
@@ -12,9 +12,12 @@
     --headerBtnBg: #37ebed;
     --downloadBtnBg: #42b3fa;
     --downloadSectionBtnBg: #0181f5;
+
     --navbarBg: #2c2c2c;
     --sectionBg: rgba(93, 177, 255, 0.85);
-    
+    --footerLightBg: #1f1f1f;
+    --footerDarkBg: #000;
+
     --pricingFirstBg: #e9f4fe;
     --pricingSecondBg: #fef4ee;
     --pricingThirdBg: #e8fcf1;
