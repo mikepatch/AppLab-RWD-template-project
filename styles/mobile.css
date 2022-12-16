@@ -290,23 +290,17 @@
 /* Testimonials section */
 .section.section--testimonials {
     background: linear-gradient(0deg, var(--sectionBg), var(--sectionBg)), center / cover no-repeat fixed url(../images/banner/testimonial.png);
-    margin-top: 1em;
-    padding: 5.5em 0;
+    margin-top: 3em;
+    padding: 6em 0;
     
 }
 
 .section--testimonials .section__content-box {
     color: var(--fontLight);
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 1.5em;
     justify-content: center;
-    padding: 0 1em;
-}
-
-.section--testimonials .section__title {
-
 }
 
 .section--testimonials .section__content {
@@ -332,11 +326,76 @@
 
 /* Pricing section */
 .section.section--pricing {
-    margin-top: 2.5em;
+    margin-top: 3em;
 }
 
-.section--pricing {
-    
+.section--pricing .section__header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    text-align: center;
+}
+
+.section--pricing .section__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    text-align: center;
+}
+
+.section--pricing .section__item {
+    box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, .1);
+    flex-basis: 100%;
+    padding-bottom: 2em;
+}
+
+.section--pricing .section__item .section__header {
+    align-items: center;
+    background-color: var(--pricingFirstBg);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+.section--pricing .section__item:nth-child(2) .section__header {
+    background-color: var(--pricingSecondBg);
+}
+
+.section--pricing .section__item:nth-child(3) .section__header {
+    background-color: var(--pricingThirdBg);
+}
+
+.section--pricing .section__item .section__title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.section--pricing .section__item .section__price {
+    color: #218af5;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.section--pricing .section__item:nth-child(2) .section__price {
+    color: #fdb86c;
+}
+
+.section--pricing .section__item:nth-child(3) .section__price {
+    color: #25d569;
+}
+
+.section--pricing .section__item .list__item--second {
+    color: var(--fontGrey);
+    margin: 1.5em 0;
+}
+
+.section--pricing .section__item .list__cta-btn {
+    background-color: transparent;
+    border: 2px solid var(--downloadBtnBg);
+    color: var(--downloadBtnBg);
+    padding: 1em 3em;
+    text-transform: capitalize;
 }
 
 /* Media queries */
