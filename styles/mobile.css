@@ -398,33 +398,34 @@
     text-transform: capitalize;
 }
 
-/* CTA section */
-.section.section--cta {
+/* Download section */
+.section.section--download {
     background-color: var(--sectionBg);
 }
 
-.section--cta .section__container {
+.section--download .section__container {
     gap: 1em;
     justify-content: center;
     margin-top: 3em;
     padding: 5em 1em;
 }
 
-.section--cta .section__title {
+.section--download .section__title {
     color: var(--fontLight);
 }
 
 /* Footer */
+
+/* Footer links */
 .footer__container.footer__footer-links {
     background-color: var(--footerLightBg);
-    color: var(--fontLight);
     max-width: 100%;
+    padding: 2em 1.1em;
 }
 
 .footer-links__list {
     display: flex;
     flex-direction: column;
-    /* gap: 1em; */
 }
 
 .footer-links__list .list__item {
@@ -440,17 +441,69 @@
 }
 
 .footer-links__list .footer__title {
+    color: var(--fontLight);
     font-size: 1.3rem;
     font-weight: 700;
+}
+.footer-links__list .footer__content {
+    color: var(--fontGrey);
 }
 
 .footer-links__list .footer__icons-list {
     display: flex;
     gap: 1em;
+    margin-top: .5em;
+}
+
+.footer__icons-list .icons-list__link {
+    background-color: var(--fontGrey);
+    border-radius: 50%;
+    display: inline-block;
+    padding: 1em;
+
+    position: relative;
+}
+
+.footer__icons-list i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer__icons-list .icons-list__link:hover {
+    box-shadow: 0 0 20px 0 #ffffff14;
+    transform: scale(1.1);
 }
 
 .footer__link-list.list--second .link-list__link {
+    color: var(--fontGrey);
+    display: inline-block;
     font-size: .8rem;
+    width: 50%;
+}
+
+.footer__link-list.list--second .link-list__link:hover {
+    color: var(--fontLight);
+}
+
+/* Footer rights */
+
+.footer__footer-rights.container {
+    background-color: var(--footerDarkBg);
+    margin: 0;
+    padding: 1em;
+}
+
+.footer__footer-rights .footer-rights__content {
+    color: var(--fontLight);
+    font-size: .7rem;
+    line-height: 200%;
+    text-align: center;
+}
+
+.footer-rights__link {
+    color: var(--downloadBtnBg);
 }
 
 /* Media queries */

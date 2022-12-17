@@ -138,3 +138,33 @@
     flex-basis: 45%;
 }
 
+
+
+/* Pricing section */
+.section.section--pricing .section__container {
+    max-width: 100%;
+    justify-content: center;
+}
+
+.section--pricing .section__list {
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+.section--pricing .section__item {
+    flex-basis: 33.33%;
+
+}
+
+.section--pricing .section__item:nth-child(2) {
+    transform: translateY(-5%);
+}
+
+.section--pricing .section__item .section__header {
+    padding: 1em 1em;
+}
+
+.section--pricing .section__item .section__title {
+    margin: 0;
+    text-align: left;
+}
