@@ -44,7 +44,6 @@
 }
 
 .brand-logo__link {
-    
     display: flex;
 }
 
@@ -67,6 +66,7 @@
     width: 60%;
     height: 2px;
     text-align: center;
+    transition: .2s  ease-out;
 
     position: absolute;
     top: 50%;
@@ -90,19 +90,28 @@
     transform: translate(0, 250%) rotate(0);
 }
 
+#navbar__hamburger-toggle:checked+.navbar__hamburger-btn .navbar__hamburger-lines {
+    transform: translate(-50%, -50%) rotate(-45deg);  
+}
+
+#navbar__hamburger-toggle:checked+.navbar__hamburger-btn .navbar__hamburger-lines::before {
+    transform: translate(400%, -50%);  
+}
+
+#navbar__hamburger-toggle:checked+.navbar__hamburger-btn .navbar__hamburger-lines::after {
+    transform: translate(0, 0) rotate(-90deg);  
+}
+
 #navbar__hamburger-toggle {
     display: none;
 }
 
 .navbar__list {
-    display: none;
-}
-
-#navbar__hamburger-toggle:checked+.navbar__list {
-    display: flex;
+    transition: var(--transition);
 }
 
 .navbar__list {
+    display: flex;
     background-color: var(--navbarBg);
     flex-direction: column;
     justify-content: flex-start;
@@ -111,8 +120,13 @@
     width: 100%;
 
     position: absolute;
+    top: -100dvh;
+    right: 0;
+    z-index: -1;
+}
+
+#navbar__hamburger-toggle:checked~.navbar__list {
     top: var(--navbarHeight);
-    left: 0;
 }
 
 .navbar__item {
@@ -151,7 +165,7 @@
 }
 
 .dropdown__list {
-    background-color: rgba(255,255,255, .03);
+    background-color: #ffffff08;
     display: none;
     flex-direction: column;
     padding: .5em 0;
@@ -202,13 +216,17 @@
     text-transform: capitalize;
 }
 
+.title-box__btn:hover {
+    background-color: var(--downloadBtnBg);
+}
+
 .img-box {
     flex-basis: 70%;
 }
 
 .img-box__img {
     max-height: 50%;
-    transform: translateX(200%);
+    transform: translateX(400%);
     animation: slide 3s .5s both;
 }
 
@@ -440,6 +458,11 @@
     text-transform: capitalize;
 }
 
+.section--pricing .section__item .list__cta-btn:hover {
+   background-color: var(--downloadBtnBg); 
+   color: #fff;
+}
+
 /* Download section */
 .section.section--download {
     background-color: var(--sectionBg);
@@ -518,8 +541,7 @@
 }
 
 .footer__icons-list .icons-list__link:hover {
-    box-shadow: 0 0 20px 0 #ffffff14;
-    transform: scale(1.1);
+    background-color: var(--downloadBtnBg);
 }
 
 .footer__link-list.list--second .link-list__link {
@@ -527,10 +549,11 @@
     display: inline-block;
     font-size: .9rem;
     margin-top: 1em;
+    transition: var(--transition);
 }
 
 .footer__link-list.list--second .link-list__link:hover {
-    color: var(--fontLight);
+    color: var(--downloadBtnBg);
 }
 
 /* Footer rights */

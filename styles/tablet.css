@@ -40,6 +40,17 @@
     width: 2em;
 }
 
+.navbar__list {
+    width: 50%;
+    
+    top: var(--navbarHeight);
+    right: -100%;
+}
+
+#navbar__hamburger-toggle:checked~.navbar__list {
+    right: 0;
+}
+
 /* Header content */
 
 .title-box {
@@ -260,7 +271,7 @@
 /* Footer */
 
 /* Footer links */
-.footer__container.footer__footer-links {
+.footer__container.footer__footer-links .footer__links-lists {
     display: flex;
     flex-wrap: wrap;
 }

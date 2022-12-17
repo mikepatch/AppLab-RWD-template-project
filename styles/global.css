@@ -58,9 +58,9 @@ a {
     transition: var(--transition);
 }
 
-.btn:hover {
+/* .btn:hover {
     transform: scale(1.1);
-}
+} */
 
 .row, .container, .cell {
     /* border: 5px solid; */
