@@ -3,7 +3,7 @@
 :root {
 
     /* colors */
-    --fontLight: #e2e2e2;
+    --fontLight: #f8f8f8;
     --fontDark: #333;
     --fontGrey: #8d8d8d;
 
@@ -55,6 +55,11 @@ a {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     padding: 1em 1.7em;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    transform: scale(1.1);
 }
 
 .row, .container, .cell {

@@ -40,7 +40,17 @@
 }
 
 .navbar__item {
-    border: none;
+    transition: var(--transition);
+}
+
+.navbar__item:hover {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar__item:last-of-type:hover {
+    background-color: var(--downloadBtnBg);
+    transform: scale(1.1);
 }
 
 .navbar__link {
@@ -59,7 +69,7 @@
 .dropdown__list {
     background-color: var(--dropdownBg);
     width: 200%;
-    padding: .3em;
+    padding: 0;
 
     position: absolute;
     top: 100%;
@@ -69,7 +79,10 @@
 
 .dropdown__item {
     width: 100%;
+}
 
+.dropdown__item:hover {
+    background-color: #42b3fa99;
 }
 
 .dropdown__link {
@@ -118,9 +131,7 @@
 
 .title-box__btn {
     letter-spacing: 1.5px;
-    margin: .8em 0;
-    /* padding: .7em 1.2em; */
- 
+    margin: .8em 0; 
 }
 
 .img-box {
@@ -146,7 +157,6 @@
 /* Features section */
 .feature-list__item {
     flex-basis: 33.33%;
-    /* padding: 0 2em; */
 }
 
 .feature-list__img {
@@ -155,21 +165,20 @@
 
 .feature-list__description {
     font-size: .7rem;
-
     padding: 0 3.3em;
 }
 
 /* SEO section */
 .section__container.container {
-justify-content: space-between;
+    justify-content: space-between;
 }
 
 .section--seo .section__content-box {
-flex-basis: 40%;
+    flex-basis: 40%;
 }
 
 .section--seo .section__title {
- font-size: 1rem;
+    font-size: 1rem;
 }
 
 .section--seo .section__content {
@@ -178,7 +187,7 @@ flex-basis: 40%;
 }
 
 .section--seo .section__btn {
-font-size: .5rem;
+    font-size: .5rem;
 }
 
 .section--seo .section__img-box {
@@ -191,7 +200,7 @@ font-size: .5rem;
 }
 
 .section--testimonials .section__content {
-font-size: .7rem;
+    font-size: .7rem;
 }
 
 /* Pricing section */

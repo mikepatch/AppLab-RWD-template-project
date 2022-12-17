@@ -11,7 +11,7 @@
 }
 
 .scroll-arrow:hover {
-    transform: scale(1.2);
+    transform: scale(1.2);    
 }
 
 /* Header */
@@ -43,8 +43,12 @@
     height: 100%;
 }
 
+.brand-logo__link {
+    
+    display: flex;
+}
+
 .brand-logo__img {
-    /* display: block; */
     max-height: 100%;
 }
 
@@ -75,7 +79,7 @@
     display: block;
     height: 2px;
     background-color: var(--menuBtnColor);
-    transform: translateY(-350%);
+    transform: translate(0, -350%);
 }
 .navbar__hamburger-lines::after {
     border-radius: 10px;
@@ -83,7 +87,7 @@
     display: block;
     height: 2px;
     background-color: var(--menuBtnColor) ;
-    transform: translateY(250%);
+    transform: translate(0, 250%) rotate(0);
 }
 
 #navbar__hamburger-toggle {
@@ -114,8 +118,8 @@
 .navbar__item {
     flex-grow: 0;
     border-bottom: 1px solid rgba(255,255,255, .03);
-    width: 100%;
     text-align: center;
+    width: 100%;   
 }
 
 /* download button */
@@ -169,7 +173,6 @@
     padding: 0;
     padding-top: var(--navbarHeight);
     width: 100%;
-    /* height: calc(100% - var(--navbarHeight)); */
 }
 
 .title-box {
@@ -205,6 +208,26 @@
 
 .img-box__img {
     max-height: 50%;
+    transform: translateX(200%);
+    animation: slide 3s .5s both;
+}
+
+@keyframes slide {
+    10% { 
+        transform: translateX(0%);
+        }
+
+    20% {
+        transform: translateX(0%) scale(1.2);
+        }
+
+    40% {
+        transform: translateX(0%) scale(1);
+        }
+
+    100% {
+        transform: translateX(0%);
+        }
 }
 
 /* MAIN */
@@ -251,6 +274,11 @@
 .feature-list__item {
     width: 60%;
     text-align: center;
+    transition: var(--transition);
+}
+
+.feature-list__item:hover {
+    transform: scale(1.1);
 }
 
 .feature-list__img {
@@ -266,14 +294,17 @@
 .section--features .feature-list__img {
     border-radius: 10px;
     padding: 1em;
+    box-shadow: inset 0 0 10px 0 #ffffff66;
 }
 
 .section--features .feature-list__item:nth-child(1) .feature-list__img {
     background: var(--firstFeatureColor);
 }
+
 .section--features .feature-list__item:nth-child(2) .feature-list__img {
     background: var(--secondFeatureColor);
 }
+
 .section--features .feature-list__item:nth-child(3) .feature-list__img {
     background: var(--thirdFeatureColor);
 }
@@ -294,7 +325,6 @@
     color: var(--fontLight);
     font-size: .9rem;
     letter-spacing: 1.5px;
-    /* margin-top: 1.8em; */
     padding: .8em 1.6em;
 }
 
@@ -475,6 +505,7 @@
     border-radius: 50%;
     display: inline-block;
     padding: 1em;
+    transition: var(--transition);
 
     position: relative;
 }
