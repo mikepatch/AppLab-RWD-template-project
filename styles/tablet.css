@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+.scroll-arrow {
+right: 3%;
+}
+
 /* Header */
 .header.row {
     background: left 30% / 100% 100% no-repeat url(../images/banner/banner.png);
@@ -39,7 +43,6 @@
 /* Header content */
 
 .title-box {
-    flex-basis: 50%;
     padding: 1em 0;
 }
 
@@ -58,22 +61,22 @@
 }
 
 .header__container {
+    align-items: flex-start;
+    flex-wrap: nowrap;
     gap: 0;
-    padding: 4em 4em 0 4em;
+    padding: 4em 1em;
 }
 
 .img-box {
-    flex-basis: 50%;
     height: 100%;
 }
 
-.img-box__img {
-    max-width: 100%;
+.header__img-box .img-box__img {
+    max-height: 100%;
 }
 
 /* MAIN */
 .section {
-    margin: 6em auto;
     padding: 0 1em;
 }
 
@@ -93,6 +96,14 @@
 }
 
 /* Features section */
+.section.section--features {
+    margin-top: 5em;
+}
+
+#features .section__list {
+    margin-top: 0;
+}
+
 .feature-list__item {
     margin: 0;
     flex-basis: 30%;
@@ -118,6 +129,8 @@
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    gap: .5em;
 }
 
 .section--seo .section__title {
@@ -138,12 +151,39 @@
     flex-basis: 45%;
 }
 
+/* Testimonials section */
+.section.section--testimonials {
+    margin-top: 5em;
+    padding: 3em 0;
+}
 
+.section--testimonials .section__content {
+    font-size: .8rem;
+    line-height: 160%;
+    margin-top: 1.5em;
+}
+
+.section__author {
+    font-size: .6rem;
+}
+
+.section__stars {
+    font-size: .8rem;
+}
 
 /* Pricing section */
+.section.section--pricing {
+    margin-top: 6em;
+}
+
 .section.section--pricing .section__container {
-    max-width: 100%;
     justify-content: center;
+    max-width: 100%;
+}
+
+.section--pricing .section__content {
+    font-size: .7rem;
+    max-width: 75%;
 }
 
 .section--pricing .section__list {
@@ -153,18 +193,85 @@
 
 .section--pricing .section__item {
     flex-basis: 33.33%;
-
 }
 
 .section--pricing .section__item:nth-child(2) {
     transform: translateY(-5%);
+    z-index: 2;
 }
 
 .section--pricing .section__item .section__header {
-    padding: 1em 1em;
+    padding: 1em 1.5em;
 }
 
 .section--pricing .section__item .section__title {
+    font-size: .8rem;
     margin: 0;
     text-align: left;
+}
+
+.section--pricing .section__item .section__price {
+font-size: .9rem;
+}
+
+.list.list--second .list__item {
+    font-size: .65rem;
+    padding: 0 1em;
+}
+
+/* Download section */
+.section.section--download {
+    background-color: #5db2ff;
+}
+
+.section--download .section__container {
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 5em 0;
+}
+
+.section--download .section__title {
+    align-self: flex-start;
+    font-size: 1.7rem;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+/* Footer */
+
+/* Footer links */
+.footer__container.footer__footer-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links__list {
+    flex-basis: 50%;
+}
+
+.footer-links__list .footer__title {
+    font-size: .9rem;
+}
+
+.footer-links__list .footer__content {
+    font-size: .7rem;
+    padding-right: 2em;
+}
+
+.footer-links__list .footer__icons-list {
+    font-size: .9rem;
+    gap: .5em;
+    margin-top: 1em;
+}
+
+.footer__link-list.list--second .link-list__link {
+    font-size: .7rem;
+    margin-top: .8em;
+}
+
+/* Footer rights */
+.footer__footer-rights .footer-rights__content {
+    font-size: .6rem;
 }

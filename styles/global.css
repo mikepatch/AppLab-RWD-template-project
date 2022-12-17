@@ -5,16 +5,16 @@
     /* colors */
     --fontLight: #e2e2e2;
     --fontDark: #333;
-    --fontGrey: #666;
+    --fontGrey: #8d8d8d;
 
-    --btnShadow: 10px 10px 20px 0 rgba(0, 0, 0, .08);
+    --btnShadow: 10px 10px 20px 0 #00000014;
     --menuBtnColor: #fefefe;
     --headerBtnBg: #37ebed;
     --downloadBtnBg: #42b3fa;
     --downloadSectionBtnBg: #0181f5;
 
     --navbarBg: #2c2c2c;
-    --sectionBg: rgba(93, 177, 255, 0.85);
+    --sectionBg: #5cb0ffd9;
     --footerLightBg: #1f1f1f;
     --footerDarkBg: #000;
 
@@ -22,16 +22,20 @@
     --pricingSecondBg: #fef4ee;
     --pricingThirdBg: #e8fcf1;
 
-    --firstFeatureColor: linear-gradient(90deg, rgba(16,136,240,1) 0%, rgba(87,175,254,1) 100%);
-    --secondFeatureColor: linear-gradient(90deg, rgba(253,173,92,1) 0%, rgba(253,143,94,1) 100%);
+    --firstFeatureColor: linear-gradient(90deg, #1088f0 0%, #57affe 100%);
+    --secondFeatureColor: linear-gradient(90deg, #fdad5c 0%, #fd8f5e 100%);
     --thirdFeatureColor: #37ef8d;
 
     /* dimensions */
     --navbarHeight: 3em;
+
+    /* transitions */
+    --transition: .3s ease-in-out;
 }
 
 html {
     font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -49,7 +53,7 @@ a {
     border-radius: 5px;
     box-shadow: var(--btnShadow);
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     padding: 1em 1.7em;
 }
 
