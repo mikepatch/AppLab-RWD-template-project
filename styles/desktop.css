@@ -5,7 +5,7 @@
 
 .container {
     max-width: 1280px;
-    padding: 0 1.1em;
+    padding: 0 1.5em;
 }
 
 /* Header */
@@ -157,4 +157,121 @@
     font-size: .7rem;
 
     padding: 0 3.3em;
+}
+
+/* SEO section */
+.section__container.container {
+justify-content: space-between;
+}
+
+.section--seo .section__content-box {
+flex-basis: 40%;
+}
+
+.section--seo .section__title {
+ font-size: 1rem;
+}
+
+.section--seo .section__content {
+    font-size: .5rem;
+    line-height: 200%;
+}
+
+.section--seo .section__btn {
+font-size: .5rem;
+}
+
+.section--seo .section__img-box {
+    flex-basis: 50%;
+}
+
+/* Testimonials section */
+.section.section--testimonials {
+    padding: 5.5em 0;
+}
+
+.section--testimonials .section__content {
+font-size: .7rem;
+}
+
+/* Pricing section */
+.section.section--pricing .section__container {
+    max-width: 1280px;
+}
+
+.section--pricing .section__list {
+    flex-basis: 100%;
+}
+
+.section--pricing .section__item .section__title {
+    font-size: .7rem;
+}
+
+.section--pricing .section__item .section__price {
+    font-size: .8rem;
+}
+
+.list.list--second .list__item {
+    font-size: .55rem;
+    margin-top: 2em;
+}
+
+.section--pricing .section__item .list__cta-btn {
+    margin-top: 2em;
+}
+
+/* Download section */
+.section.section--download {
+    padding: 0 1em;
+}
+.section--download .section__container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.section--download .section__title {
+    flex-basis: 60%;
+    font-size: 1.6rem;
+}
+
+/* Footer */
+
+/* Footer links */
+.footer__container.footer__footer-links {
+    flex-wrap: nowrap;
+    padding-top: 3em;
+    padding-bottom: 6em;
+}
+
+.footer-links__list {
+    flex-basis: 33.33%;
+}
+
+.footer-links__list:first-child {
+    flex-basis: 60%;
+}
+
+.footer-links__list:last-child {
+    flex-basis: 60%;
+}
+.footer-links__list .footer__title {
+    font-size: .7rem;
+}
+
+.footer-links__list .footer__content {
+    font-size: .55rem;
+}
+
+/* Social media icons */
+.footer-links__list .footer__icons-list {
+    font-size: .7rem;
+}
+
+.footer__link-list.list--second .link-list__link {
+    font-size: .55rem;
+}
+
+/* Footer rights */
+.footer__footer-rights .footer-rights__content {
+    font-size: .5rem;
 }

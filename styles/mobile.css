@@ -404,7 +404,7 @@
 
 .section--pricing .section__item .list__cta-btn {
     background-color: transparent;
-    border: 2px solid var(--downloadBtnBg);
+    border: 1px solid var(--downloadBtnBg);
     color: var(--downloadBtnBg);
     padding: 1em 3em;
     text-transform: capitalize;
@@ -423,7 +423,7 @@
 }
 
 .section--download .section__title {
-    color: var(--fontLight);
+    color: #ececec;;
     font-size: 1.3rem;
 }
 
@@ -463,6 +463,7 @@
     font-size: .9rem;
 }
 
+/* Social media icons */
 .footer-links__list .footer__icons-list {
     display: flex;
     gap: 1em;
