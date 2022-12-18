@@ -18,7 +18,7 @@
 .header.row {
     background: center / cover no-repeat url(../images/banner/banner.png);
     color: var(--fontLight);
-    max-height: 100dvh;
+    /* max-height: 100dvh; */
 }
 
 /* Navbar */
@@ -587,9 +587,4 @@
         font-size: .8rem;
         margin: 1em 0;
     }
-
-    .img-box__img {
-        max-height: 70%;
-    }
-
 }
