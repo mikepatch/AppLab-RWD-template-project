@@ -14,6 +14,7 @@
     padding: .8em 0;
     min-height: 70dvh;
 }
+
 /* Navbar */
 .navbar.row {
     background-color: transparent;
@@ -143,15 +144,6 @@
 .title-box__btn {
     letter-spacing: 1.5px;
     margin: .8em 0; 
-}
-
-.img-box {
-    flex-basis: 40%;
-    height: 100%;
-}
-
-.img-box__img {
-    max-height: 120%;
 }
 
 /* MAIN */

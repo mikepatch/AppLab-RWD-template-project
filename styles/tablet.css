@@ -52,6 +52,13 @@
 }
 
 /* Header content */
+.header__container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
 
 .title-box {
     padding: 1em 0;
@@ -78,12 +85,8 @@
     padding: 4em 1em;
 }
 
-.img-box {
-    height: 100%;
-}
-
 .header__img-box .img-box__img {
-    max-height: 100%;
+    max-height: none;
 }
 
 /* MAIN */
