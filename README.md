@@ -8,8 +8,13 @@ See the live version of [AppLab RWD](https://mikepatch.github.io/AppLab-RWD-temp
 Pure HTML & CSS responsive project based on free [Colorlib](https://colorlib.com/) template. I created this project to improve my acquired skills.
 
 **Main features**:
-- Animated header image and key elements of the page.
-- Pure CSS/HTML interactions without using JavaScript.
+- RWD – media queries, flexbox, clamp
+- Pure HTML & CSS
+- BEM methodology
+- Animated hamburger menu (without JS)
+- CSS variables
+- semantic HTML
+- Pure CSS/HTML animations without using JavaScript
 
 &nbsp;
 
