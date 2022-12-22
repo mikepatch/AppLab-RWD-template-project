@@ -9,6 +9,7 @@ Pure HTML & CSS responsive project based on free [Colorlib](https://colorlib.com
 
 **Main features**:
 - **RWD** – media queries, flexbox, clamp, dvh
+- **Mobile First** aproach
 - Pure HTML & CSS
 - **BEM** methodology
 - CSS **variables**
